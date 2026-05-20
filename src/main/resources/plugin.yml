@@ -1,0 +1,35 @@
+name: EFMapArt
+main: com.eternalfeather.efmapart.Main
+version: 1.4
+author: EternalFeather
+softdepend: [Vault]
+
+commands:
+  efmapart:
+    description: EFMapArt 地图画插件主命令
+    usage: /efmapart <gui|help|list|recommend|get|wall|give|create>
+
+permissions:
+  efmapart.admin:
+    description: 允许使用 EFMapArt 所有管理功能
+    default: op
+
+  efmapart.gui:
+    description: 允许打开 EFMapArt GUI
+    default: true
+
+  efmapart.get:
+    description: 允许普通玩家领取地图画物品
+    default: true
+
+  efmapart.wall:
+    description: 允许自动生成地图墙
+    default: op
+
+  efmapart.create:
+    description: 允许管理员直接生成地图到背包
+    default: op
+
+  efmapart.bypass:
+    description: 绕过尺寸和费用限制
+    default: op

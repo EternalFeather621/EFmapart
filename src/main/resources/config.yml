@@ -1,0 +1,35 @@
+settings:
+  prefix: "&6[EFMapArt]&r "
+
+  wall-material: "GLOWSTONE"
+
+  normal-max-columns: 4
+  normal-max-rows: 4
+
+  recommend-max-columns: 8
+  recommend-max-rows: 6
+
+cost:
+  # 普通玩家领取地图物品是否收费
+  give-enabled: true
+
+  # 每一张地图的价格
+  # 例如：
+  # 1×1 = 1 张地图 = 100
+  # 2×2 = 4 张地图 = 400
+  # 3×3 = 9 张地图 = 900
+  # 4×4 = 16 张地图 = 1600
+  give-cost-per-map: 100
+
+  # 扣钱命令
+  # %player% = 玩家名
+  # %cost% = 总花费
+  # %amount% = 地图数量
+  # %price% = 每张地图价格
+  give-cost-command: "eco take %player% %cost%"
+
+  # 自动生成地图墙是否收费
+  # 目前 OP 默认不扣费，普通玩家没有自动生成墙权限
+  wall-enabled: true
+  wall-cost: 1000
+  wall-cost-command: "eco take %player% %cost%"
